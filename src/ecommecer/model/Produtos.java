@@ -6,7 +6,7 @@ public class Produtos {
 		
 	private String nome;
 	
-	private String tipo;
+	
 	
 	private float preco;
 	
@@ -19,11 +19,11 @@ public class Produtos {
 
 
 
-	public Produtos(int id, String nome, String tipo, float preco, String marca, int quantidade) {
+	public Produtos(int id, String nome,  float preco, String marca, int quantidade) {
 		super();
 		this.id = id;
 		this.nome = nome;
-		this.tipo = tipo;
+		
 		this.preco = preco;
 		this.marca = marca;
 		this.quantidade = quantidade;
@@ -61,13 +61,7 @@ public class Produtos {
 		this.nome = nome;
 	}
 
-	public String getTipo() {
-		return tipo;
-	}
-
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
-	}
+	
 
 	public float getPreco() {
 		return preco;

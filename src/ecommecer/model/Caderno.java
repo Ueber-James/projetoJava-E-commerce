@@ -6,8 +6,8 @@ public class Caderno extends Produtos {
 
 	
 
-	public Caderno(int id, String nome, String tipo, float preco, String marca, int quantidade, String tipodefolha) {
-		super(id, nome, tipo, preco, marca, quantidade);
+	public Caderno(int id, String nome,  float preco, String marca, int quantidade, String tipodefolha) {
+		super(id, nome,  preco, marca, quantidade);
 		this.tipodefolha = tipodefolha;
 	}
 
@@ -22,6 +22,7 @@ public class Caderno extends Produtos {
 	
 	@Override
 	public void visualizar() {
+		super.visualizar();
 		System.out.println("Tipo de folha: " + this.tipodefolha);
 		
 	}

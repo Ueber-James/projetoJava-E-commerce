@@ -7,8 +7,8 @@ public class Lapis extends Produtos {
 	
 	
 
-	public Lapis(int id, String nome, String tipo, float preco, String marca, int quantidade, String cor) {
-		super(id, nome, tipo, preco, marca, quantidade);
+	public Lapis(int id, String nome, float preco, String marca, int quantidade, String cor) {
+		super(id, nome,  preco, marca, quantidade);
 		this.cor = cor;	}
 
 	public String getCor() {
@@ -22,6 +22,7 @@ public class Lapis extends Produtos {
 	
 	@Override
 	public void visualizar() {
+		super.visualizar();
 		System.out.println("Cor do lapis: " + this.cor);
 		
 	}
